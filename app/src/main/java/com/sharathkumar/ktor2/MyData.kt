@@ -20,7 +20,7 @@ class MyData {
         }
     }
     suspend fun fetchImages(query: String): List<ImageResult>{
-        val apiKey = "44458636-9abcb479d380e306f9cae994e"
+        val apiKey = ""
         return try{
             val response : Respone = client.get("https://pixabay.com/api/"){
                 parameter("key",apiKey)
